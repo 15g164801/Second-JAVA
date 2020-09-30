@@ -1,16 +1,14 @@
-function assignGrade(num1){
-  if (num1>= 90){
-    return 'A'
-  } else if (num1>= 60){
-    return 'B'
-  } else if (num1>= 60){
-    return 'B'
-  } else if (num1>= 40){
-    return 'C'
-  } else if (num1>= 20){
-    return 'D'
-  } else {
-    return 'FAIL'
+class Fruit{
+  constructor(fruit){
+    this.fruit = fruit;
+  }
+  sayYummy() {
+    console.log(this.fruit)
   }
 }
-console.log (assignGrade(10))
+
+let apple = new Fruit('apple pie')
+let orange = new Fruit('orange juice')
+
+let fruits = [apple, orange]
+fruits.forEach(x => x.sayYummy())
